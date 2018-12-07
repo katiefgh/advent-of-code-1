@@ -1,13 +1,13 @@
 f = open("input.txt")
 
-input = f.read().splitlines()
+input_d = f.read().splitlines()
 
 frequency = 0
 
 count = {0:1}
 
 while count[frequency]==1:
-    for i in input:
+    for i in input_d:
         for o in i:
             if o == i[0]:
                 if o == '+':
